@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width:100%;
+    height: 100%;
+}
+/* 手机 */
+    /* header开始 */
+    header{
+        min-width: 100%;
+        height: 42px;
+        background: #222222;
+    }
+    header a{
+        color: #9d9d9d;
+        text-decoration: none;
+    }
+    header a:hover{
+        color: white;
+        text-decoration: none;
+    }
+    .header-box{
+        widows: 100%;;
+        margin: auto;
+    }
+    .logo{
+        width: 164px;
+        height: 100%;
+        color: #9d9d9d;
+        float: left;
+    }
+    .logo a{
+        width: 100%;
+        height: 100%;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .nav{
+        width: 678px;
+        height: 100%;
+        float: left;
+        display: none;
+    }
+    .nav a{
+        padding: 0 2%;
+        height: 100%;
+        float: left;
+        line-height: 42px;
+        font-size: 14px;
+    }
+    .about{
+        width: 100px;
+        height: 100%;
+        color: #9d9d9d;
+        float: right;
+        display: none;
+    }
+    .about a{
+        width: 50px;
+        height: 100%;
+        line-height: 42px;
+    }
+    .small-nav{
+        float:right;
+        width: 40px;
+        height: 30px;
+        margin-top: 15px;
+        border-radius: 5px;
+        color:#fff;
+        line-height: 42px;
+        cursor: pointer;
+    }
+    li,ul{
+        list-style: none;
+    }
+
+    .son-nav{
+        float: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #222222;
+        width: 100vw;
+        top: 42px;
+        text-align: left;
+        height: 0;
+        transition: height 1s ease;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    svg{
+        float: left;
+        /* margin-right:100px; */
+    }
+    .small-nav .small-ab:hover{
+        color: grey;
+    }
+    .small-nav:hover>.son-nav{
+        height:200px;
+        visibility: visible;
+    }
+     /* center开始 */
+     .center{
+        min-width: 100%;
+        height: 500px;
+        background:rgb(95, 5, 95);
+        position: relative;
+    }
+    /* linear-gradient(rgb(56,2,56) 10% rgb(95,3,95)) */
+    .center-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 100px 50px;
+        padding:15px;
+        color: white;
+        display: inline;
+        text-align: center;
+    }
+    .center-content h1{
+        font-size: 60px;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 700;
+    }
+    .center-content h2{
+        font-size: 18px;
+        line-height: 1.25;
+        font-weight: 200;
+    }
+    .center-content .center-btn{
+        width: 100%;
+        height: 60px;
+        margin: 30px 0 15px;
+    }
+    .center-content .center-btn a{
+        display: inline-block;
+        color: white;
+        background-color:#337AB7;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 13px 35px 17px;
+        position: relative;
+        text-decoration: none;
+    }
+    .center-content .center-btn a:hover{
+        background-color:#094880;
+        
+    }
+    .center-content ul{
+        display: inline;
+    }
+    .center-content ul a{
+        font-size: 14px;
+        color: gray;
+    }
+    .center-content ul a:hover{
+        color: white;
+    }
+    /* 中导航开始 */
+    .title{
+        width: 384px;
+        height: 85px;
+        text-align: center;
+        padding-bottom: 9px;
+        border-bottom:1px solid rgb(204, 203, 203);
+        margin: 60px auto 40px ;
+        position: relative;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+
+/* 平板 */
+@media screen and (min-width:700px){
+    /* header开始 */
+    .small-nav{
+        display: none;
+    }
+    header{
+        min-width: 700px;
+        height: 42px;
+        background: #222222;
+    }
+    header a{
+        color: #9d9d9d;
+        text-decoration: none;
+    }
+    header a:hover{
+        color: white;
+    }
+    .header-box{
+        width: 700px;
+        margin: auto;
+    }
+    .logo{
+        width: 164px;
+        height: 100%;
+        color: #9d9d9d;
+        float: left;
+        display: none;
+    }
+    .logo a{
+        width: 100%;
+        height: 100%;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .nav{
+        width: 678px;
+        height: 100%;
+        float: left;
+        display: block;
+    }
+    .nav a{
+        padding: 0 2%;
+        height: 100%;
+        float: left;
+        line-height: 42px;
+        font-size: 14px;
+    }
+    .about{
+        width: 100px;
+        height: 100%;
+        color: #9d9d9d;
+        float: right;
+        display: none;
+    }
+    .about a{
+        width: 50px;
+        height: 100%;
+        line-height: 42px;
+    }
+    /* center开始 */
+    .center{
+        min-width: 700px;
+        height: 500px;
+        background:rgb(95, 5, 95);
+        position: relative;
+    }
+    /* linear-gradient(rgb(56,2,56) 10% rgb(95,3,95)) */
+    .center-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 100px 50px;
+        padding:15px;
+        color: white;
+        display: inline;
+        text-align: center;
+    }
+    .center-content h1{
+        font-size: 90px;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 700;
+    }
+    .center-content h2{
+        font-size: 24px;
+        line-height: 1.25;
+        font-weight: 200;
+    }
+    .center-content .center-btn{
+        width: 100%;
+        height: 60px;
+        margin: 30px 0 15px;
+    }
+    .center-content .center-btn a{
+        display: inline-block;
+        color: white;
+        background-color:#337AB7;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 13px 35px 17px;
+        position: relative;
+        text-decoration: none;
+    }
+    .center-content .center-btn a:hover{
+        background-color:#094880;
+        
+    }
+    .center-content ul{
+        display: inline;
+    }
+    .center-content ul a{
+        font-size: 14px;
+        color: gray;
+    }
+    .center-content ul a:hover{
+        color: white;
+    }
+    /* 中导航开始 */
+    .title{
+        width: 432px;
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom:1px solid rgb(204, 203, 203);
+        margin: 60px auto 40px;
+    }
+    .title h2{
+        font-size: 30px;
+        margin: 20px 0 10px;
+        padding:0;
+    }
+    /* 下边框出错 */
+    .title p{
+        color:#333;
+        margin:0 0 10px;
+    }
+}
+/* 中等屏幕 */
+@media screen and (min-width:970px){
+    /* header开始 */
+    .small-nav{
+        display: none;
+    }
+    header{
+        min-width: 970px;
+        height: 42px;
+        background: #222222;
+    }
+    header a{
+        color: #9d9d9d;
+        text-decoration: none;
+    }
+    header a:hover{
+        color: white;
+    }
+    .header-box{
+        width: 970px;
+        margin: auto;
+    }
+    .logo{
+        width: 164px;
+        height: 100%;
+        color: #9d9d9d;
+        float: left;
+        display: block;
+    }
+    .logo a{
+        width: 100%;
+        height: 100%;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .nav{
+        width: 678px;
+        height: 100%;
+        float: left;
+        display: block;
+    }
+    .nav a{
+        padding: 0 2%;
+        height: 100%;
+        float: left;
+        line-height: 42px;
+        font-size: 14px;
+    }
+    .about{
+        width: 100px;
+        height: 100%;
+        color: #9d9d9d;
+        float: right;
+        display: block;
+    }
+    .about a{
+        width: 50px;
+        height: 100%;
+        line-height: 42px;
+    }
+    /* center开始 */
+    .center{
+        min-width: 970px;
+        height: 500px;
+        background:rgb(95, 5, 95);
+        position: relative;
+    }
+    /* linear-gradient(rgb(56,2,56) 10% rgb(95,3,95)) */
+    .center-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 100px 50px;
+        padding:15px;
+        color: white;
+        display: inline;
+        text-align: center;
+    }
+    .center-content h1{
+        font-size: 100px;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 700;
+    }
+    .center-content h2{
+        font-size: 30px;
+        line-height: 1.25;
+        font-weight: 200;
+    }
+    .center-content .center-btn{
+        width: 100%;
+        height: 60px;
+        margin: 30px 0 15px;
+    }
+    .center-content .center-btn a{
+        display: inline-block;
+        color: white;
+        background-color:#337AB7;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 13px 35px 17px;
+        position: relative;
+        text-decoration: none;
+    }
+    .center-content .center-btn a:hover{
+        background-color:#094880;
+        
+    }
+    .center-content ul{
+        display: inline;
+    }
+    .center-content ul a{
+        font-size: 14px;
+        color: gray;
+    }
+    .center-content ul a:hover{
+        color: white;
+    }
+    /* 中导航开始 */
+    .title{
+        width: 684px;
+        height: 85px;
+        text-align: center;
+        padding-bottom: 9px;
+        border-bottom:1px solid rgb(204, 203, 203);
+        margin: 60px auto 40px ;
+        position: relative;
+    }
+    .title h2{
+        font-size: 42px;
+    }
+
+}
+/* 大屏幕 */
+@media screen and (min-width:1170px){
+    /* header开始 */
+    .small-nav{
+        display: none;
+    }
+    header{
+        min-width: 1170px;
+        height: 42px;
+        background: #222222;
+    }
+    header a{
+        color: #9d9d9d;
+        text-decoration: none;
+    }
+    header a:hover{
+        color: white;
+    }
+    .header-box{
+        width: 1170px;
+        margin: auto;
+    }
+    .logo{
+        width: 164px;
+        height: 100%;
+        color: #9d9d9d;
+        float: left;
+    }
+    .logo a{
+        width: 100%;
+        height: 100%;
+        line-height: 42px;
+        font-size: 18px;
+    }
+    .nav{
+        width: 678px;
+        height: 100%;
+        float: left;
+        display: block;
+    }
+    .nav a{
+        padding: 0 2%;
+        height: 100%;
+        float: left;
+        line-height: 42px;
+        font-size: 14px;
+    }
+    .about{
+        width: 100px;
+        height: 100%;
+        color: #9d9d9d;
+        float: right;
+    }
+    .about a{
+        width: 50px;
+        height: 100%;
+        line-height: 42px;
+    }
+    /* center开始 */
+    .center{
+        min-width: 1170px;
+        height: 500px;
+        background:rgb(95, 5, 95);
+        position: relative;
+    }
+    /* linear-gradient(rgb(56,2,56) 10% rgb(95,3,95)) */
+    .center-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 100px 50px;
+        padding:15px;
+        color: white;
+        display: inline;
+        text-align: center;
+    }
+    .center-content h1{
+        font-size: 100px;
+        line-height: 1;
+        letter-spacing: -2px;
+        font-weight: 700;
+    }
+    .center-content h2{
+        font-size: 30px;
+        line-height: 1.25;
+        font-weight: 200;
+    }
+    .center-content .center-btn{
+        width: 100%;
+        height: 60px;
+        margin: 30px 0 15px;
+    }
+    .center-content .center-btn a{
+        display: inline-block;
+        color: white;
+        background-color:#337AB7;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 13px 35px 17px;
+        position: relative;
+        text-decoration: none;
+    }
+    .center-content .center-btn a:hover{
+        background-color:#094880;
+        
+    }
+    .center-content ul{
+        display: inline;
+    }
+    .center-content ul a{
+        font-size: 14px;
+        color: gray;
+    }
+    .center-content ul a:hover{
+        color: white;
+    }
+    /* 中导航开始 */
+    .title{
+        width: 684px;
+        height: 85px;
+        text-align: center;
+        padding-bottom: 9px;
+        border-bottom:1px solid rgb(204, 203, 203);
+        margin: 60px auto 40px ;
+        position: relative;
+    }
+    .title h2{
+        font-size: 42px;
+    }
+    
+
+}
